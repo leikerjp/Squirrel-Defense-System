@@ -12,8 +12,8 @@ framerate = 15.0
 border_width = 5
 
 cap = cv.VideoCapture(0)
-cap.set(cv.CV_CAP_PROP_FRAME_WIDTH, resolution[0])
-cap.set(cv.CV_CAP_PROP_FRAME_WIDTH, resolution[1])
+cap.set(cv.CAP_PROP_FRAME_WIDTH, resolution[0])
+cap.set(cv.CAP_PROP_FRAME_WIDTH, resolution[1])
 
 background_subtractor = cv.createBackgroundSubtractorMOG2()
 background_subtractor.setBackgroundRatio(0.7)  # set to match Matlab
